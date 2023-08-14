@@ -1,0 +1,22 @@
+.container{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+
+.search{
+    flex:0.8;
+    width: 100%;
+}
+
+
+.searchButton{
+    flex: 0.1;
+}
+
+.clearButton{
+    flex:0.1;
+}
