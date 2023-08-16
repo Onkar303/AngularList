@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SearchbarComponent {
 
-  
+  item:string="";
+
+  onClick(){
+    this.item = "search";        
+  }
 
 }

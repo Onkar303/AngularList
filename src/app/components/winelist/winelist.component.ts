@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, Input, OnDestroy } from '@angular/core';
 import { Subscription, forkJoin, tap } from 'rxjs';
 import { WineService } from 'src/app/services/wine.service';
 import { Wine } from '../../model/wine.model';
@@ -12,6 +12,7 @@ import { Beer } from 'src/app/model/beer.model';
 })
 export class WinelistComponent implements OnDestroy {
 
+  @Input() message:string = "";
   subscriptions:Subscription[] = [];
   wineList:Wine[] = [];
 
