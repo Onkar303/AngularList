@@ -3,8 +3,13 @@
     {{message}}
 </p>
 
+<button (click)="onClick()">
+    Click here to get data
+</button>
+
 <ol>
     <li *ngFor="let wine of wineList">
-        {{wine.winery}}
+       <label>{{wine.winery}}</label> 
+       <label>{{wine.rating.average}}</label> 
     </li>
 </ol>
